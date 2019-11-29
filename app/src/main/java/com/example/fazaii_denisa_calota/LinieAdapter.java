@@ -10,14 +10,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
-public class TopAdapter extends ArrayAdapter<Linie> {
-    int resourceID;
-    public TopAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Linie> objects) {
+public class LinieAdapter extends ArrayAdapter<Linie> {
+    private int resourceID;
+
+    public LinieAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Linie> objects) {
         super(context, resource, objects);
         resourceID=resource;
     }
@@ -25,15 +23,14 @@ public class TopAdapter extends ArrayAdapter<Linie> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        Linie linie = getItem(position);
-        LayoutInflater inflater= LayoutInflater.from(getContext());
-        View view= inflater.inflate(resourceID, null);
-
+        Linie linie= getItem(position);
+        LayoutInflater inflater = LayoutInflater.from(getContext());
+        View view = inflater.inflate(resourceID, null);
         TextView textViewNrLinie = (TextView) view.findViewById(R.id.numarLinie);
-        TextView textViewRating = (TextView) view.findViewById(R.id.tipRuta);
+        TextView textViewTipRuta = (TextView) view.findViewById(R.id.tipRuta);
 
         textViewNrLinie.setText(linie.getNumarLinie()+"");
-        textViewRating.setText(linie.getRating()+"/5");
+        textViewTipRuta.setText(linie.getTipRuta());
 
         return view;
     }

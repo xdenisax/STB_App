@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FazaII-Denisa-Calota</string>
+    <string name="linii_stb">Linii STB</string>
+    <string name="detalii_despre_linia">Detalii despre linia</string>
+    <string name="adauga_in_liniile_mele">Adauga in Liniile mele</string>
+    <string name="elimina_din_favorite">Elimina din favorite</string>
+    <string name="liniile_mele">Liniile mele</string>
+    <string name="adauga_detalii">Adauga detalii</string>
+    <string name="vezi_detalii">Vezi detalii</string>
+    <string name="feedback_calatorie_pe_linia">Feedback calatorie pe linia</string>
+    <string name="nivel_de_aglomeratie">Nivel de aglomeratie</string>
+    <string name="rating">Rating</string>
+    <string name="date_introduse_acum">Date introduse acum</string>
+    <string name="salveaza_modificarile">Salveaza modificarile</string>
+    <string name="liniile_mele_preferate">Liniile mele preferate</string>
+    <string name="top">Top</string>
+</resources>

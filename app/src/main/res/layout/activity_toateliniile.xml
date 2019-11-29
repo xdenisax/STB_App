@@ -4,37 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Top">
+    tools:context=".ToateLiniile">
 
     <TextView
-        android:id="@+id/textViewTop"
+        android:id="@+id/textViewLiniiSTB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="@string/liniile_mele_preferate"
-        android:textSize="24sp"
+        android:text="Linii STB"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.071" />
 
     <ListView
-        android:id="@+id/listViewTop"
-        android:layout_width="wrap_content"
+        android:id="@+id/listViewToateLiniile"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTop"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@+id/textViewLiniiSTB"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLiniiSTB"
+        app:layout_constraintVertical_bias="0.00999999" />
 </androidx.constraintlayout.widget.ConstraintLayout>
